@@ -1,0 +1,2 @@
+FLASK_APP=rpsgame.py
+FLASK_ENV=development
