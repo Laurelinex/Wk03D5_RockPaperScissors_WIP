@@ -1,19 +1,16 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <h2>Fancy a round?</h2>
+    <p>Press <span>Play</span> to start a new game.</p>
 
-{% block content %}
+    <button id="play-button" type="button"><a href="/play">Play</a></button>
 
-<h1>Make your choice!</h1>
-
-<div id="container-choices">
-    <p>Player 1 chose {{ player1.choice }}</p>
-    <p>Player 2 chose {{ player2.choice }}</p>
-    <p>The result is: {{ result }}</p>
-    <!-- <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button> -->
-    <!-- <img id="rock" src="{{url_for('static', filename='rock.png')}}" alt="Rock" style="display: inline;">
-    <img id="paper" src="{{url_for('static', filename='paper.png')}}" alt="Paper" style="display: inline;">
-    <img id="rock" src="{{url_for('static', filename='scissors.png')}}" alt="Scissors" style="display: inline;"> -->
-</div>
-
-{% endblock %}
+</body>
+</html>

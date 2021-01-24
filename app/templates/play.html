@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Make your choice!</h1>
+
+<div id="container-choices">
+    <div id="container-rock">
+        <button type="button" id="rock">Rock</button>
+        <img id="rock" src="{{url_for('static', filename='rock.png')}}" alt="Rock" style="display: inline;">
+    </div>
+    <div id="container-">
+        <button type="button" id="paper">Paper</button>
+        <img id="paper" src="{{url_for('static', filename='paper.png')}}" alt="Paper" style="display: inline;">
+    </div>
+   <div>
+    <button type="button"  id="scissors">Scissors</button>
+    <img id="rock" src="{{url_for('static', filename='scissors.png')}}" alt="Scissors" style="display: inline;">
+   </div>
+</div>
+
+{% endblock %}
