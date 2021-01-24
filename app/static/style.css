@@ -1,0 +1,90 @@
+body {
+    background-color: #EAB68D;
+    color: #603B3D;
+    font-family: 'Sofia Pro', Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #504D64;
+    padding: 0.2rem;
+    width: 100%;
+}
+
+header > ul > li {
+    list-style: none;
+    padding: 5px;
+}
+
+.navLink {
+    display: inline;
+}
+
+.navLink a {
+    text-decoration: none;
+    color: #CED1C9;
+}
+
+footer {
+    background-color: #CED1C9;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
+
+.container {
+    text-align: center;
+    padding: 5px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+#rules {
+    margin-left: 20px;
+}
+
+#tips {
+    margin-left: 25px;
+}
+
+#main-title {
+    text-align: center;
+}
+
+#play-button {
+    background-color: #603B3D;
+    padding: 5px 10px;
+    border: 1px solid #CED1C9;
+}
+
+#play-button a {
+    text-decoration: none;
+    color: #CED1C9;
+}
+
+#container-choices {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#rock, #paper, #scissors {
+    height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 150px;
+}
+
+#container-result {
+    margin: 25px;
+
+}

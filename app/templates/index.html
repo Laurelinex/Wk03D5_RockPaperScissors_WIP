@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} Rock Paper Scissors</title>
-</head>
-<body>
-    <h1>Rock Paper Scissors</h1>
-    <h2>Fancy a round?</h2>
-    <p>Press <span>Play</span> to start a new game.</p>
+{% extends "base.html" %}
 
-    <button id="play-button" type="button"><a href="/play">Play</a></button>
+{% block content %}
 
-</body>
-</html>
+    <h1 id="main-title">Rock Paper Scissors</h1>
+    <div class="container">
+        <h2>Fancy a round?</h2>
+        <p>Press <span>Play</span> to start a new game.</p>
+        <button id="play-button" type="button"><a href="/play">Play</a></button>
+    </div>
+
+{% endblock %}
