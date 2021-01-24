@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} Rock Paper Scissors</title>
-</head>
-<body>
-    <h1>Fancy a round of Rock Paper Scissors?</h1>
-    <p>Press <span>Play</span> to start a game.</p>
+{% extends "base.html" %}
 
-    <button id="play-button" type="button"><a href="/play">Play</a></button>
+{% block content %}
 
-    <div id="rules">
-        <h3>Rules of Rock Paper Scissors</h3>
-        <ul>    
-            <li>If you choose Rock, you will win against Scissors but lose against Paper.</li>
-            <li>If you choose Scissors, you will win against Paper but lose against Rock.</li>
-            <li>If you choose Paper, you will win against Rock but lose against Scissors. </li>   
-        </ul>
-    </div>
- 
-</body>
-</html>
+<h1>Make your choice!</h1>
+
+<div id="container-choices">
+    <p>Player 1 chose {{ player1.choice }}</p>
+    <p>Player 2 chose {{ player2.choice }}</p>
+    <p>The result is: {{ result }}</p>
+    <!-- <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button> -->
+    <!-- <img id="rock" src="{{url_for('static', filename='rock.png')}}" alt="Rock" style="display: inline;">
+    <img id="paper" src="{{url_for('static', filename='paper.png')}}" alt="Paper" style="display: inline;">
+    <img id="rock" src="{{url_for('static', filename='scissors.png')}}" alt="Scissors" style="display: inline;"> -->
+</div>
+
+{% endblock %}
