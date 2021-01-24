@@ -1,3 +1,6 @@
+from app.models.player import Player
+import random
+
 class Game:
 
     def play_game(self, player_1, player_2):
@@ -16,3 +19,10 @@ class Game:
             return "It's a DRAW!"
         else:
             return "You LOSE!"
+
+    def gen_computer_player(self):
+        choices = ["rock", "paper", "scissors"]
+        computer_choice = random.choice(choices)
+        computer = Player("Computer", computer_choice)
+
+        

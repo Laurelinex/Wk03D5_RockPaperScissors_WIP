@@ -2,24 +2,40 @@
 
 {% block content %}
 
-<h1>Make your choice!</h1>
+<form class="game-form" action="/play" method="POST">
+    <label for="name">Enter your name:</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <br>
+    <!-- <h1>Make your choice!</h1> -->
+    <label for="choice">Maye your choice!</label>
+        <select id="choice" name="choice">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Play!">
+    <div id="container-choices">
+            <div id="container-rock">
+                <img type="button" id="rock" src="{{url_for('static', filename='rock.png')}}" alt="Rock" style="display: inline;">
+                <!-- <br>
+                <button type="button" id="rock">Rock</button> -->
+            </div>
+            <div id="container-paper">
+                <img type="button" id="paper" src="{{url_for('static', filename='paper.png')}}" alt="Paper" style="display: inline;">
+                <!-- <br>
+                <button type="button" id="paper">Paper</button> -->
+            </div>
+            <div id="container-scissors">
+                <img type="button" id="scissors" src="{{url_for('static', filename='scissors.png')}}" alt="Scissors" style="display: inline;">
+                <!-- <br>
+                <button type="button"  id="scissors">Scissors</button> -->
+            </div>
 
-<div id="container-choices">
-    <div id="container-rock">
-        <img type="button" id="rock" src="{{url_for('static', filename='rock.png')}}" alt="Rock" style="display: inline;">
-        <br>
-        <button type="button" id="rock">Rock</button>
-    </div>
-    <div id="container-paper">
-        <img type="button" id="paper" src="{{url_for('static', filename='paper.png')}}" alt="Paper" style="display: inline;">
-        <br>
-        <button type="button" id="paper">Paper</button>
-    </div>
-    <div id="container-scissors">
-        <img type="button" id="scissors" src="{{url_for('static', filename='scissors.png')}}" alt="Scissors" style="display: inline;">
-        <br>
-        <button type="button"  id="scissors">Scissors</button>
-    </div>
+</form>
+    
 </div>
 
 {% endblock %}
